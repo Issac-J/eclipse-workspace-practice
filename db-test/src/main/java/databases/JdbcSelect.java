@@ -41,7 +41,19 @@ public class JdbcSelect {
 		}
 		
 		catch(Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("Database Connection Failed!");
+			e.printStackTrace();
+		}
+		
+		finally {
+			try {
+				if(rs != null) rs.close();
+				if(stmt != null) stmt.close();
+				if(conn != null) conn.close();
+			} 
+			catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
 		}
 		
 	}
