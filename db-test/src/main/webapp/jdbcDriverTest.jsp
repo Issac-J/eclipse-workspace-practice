@@ -42,7 +42,6 @@
 					String name = rs.getString("Name");
 					Timestamp reserveDate = rs.getTimestamp("ReserveDate");
 					String roomNum = rs.getString("RoomNum");
-					
 		%>
 					<table style="text-align: center; border: solid black 1px">
 						<tr>
