@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Web Board</title>
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/login-style.css">
 	</head>
 	<body>
     <div class="container">
