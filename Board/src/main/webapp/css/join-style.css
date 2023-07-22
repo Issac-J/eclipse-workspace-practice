@@ -46,6 +46,13 @@ body {
   border-bottom-right-radius: 0;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #eee;
+  -webkit-box-shadow: 0 0 0px 1000px #3b4148 inset;
+}
+
 /* input[text], input[password] */
 .join input[type="text"],
 .join input[type="password"] {
