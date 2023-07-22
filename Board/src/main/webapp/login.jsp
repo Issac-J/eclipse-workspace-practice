@@ -12,7 +12,7 @@
     <div class="container">
       <h1 class="content__title">LogIn</h1>
 
-      <form class="form login" action="#">
+      <form class="form login" action="loginAction.jsp" method="POST">
         <div class="form__field">
           <label for="login__username">
             <img class="icons" alt="" src="./images/icons8-user-48.png" />
@@ -21,7 +21,7 @@
             type="text"
             id="login__username"
             class="form__input"
-            name="username"
+            name="userId"
             placeholder="Username"
           />
         </div>
@@ -34,7 +34,7 @@
             type="password"
             id="login__password"
             class="form__input"
-            name="password"
+            name="userPw"
             placeholder="Password"
           />
         </div>
