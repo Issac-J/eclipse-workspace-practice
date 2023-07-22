@@ -8,8 +8,6 @@
 		<title>Web Board</title>
 	</head>
 	<body>
-		<h1>Web Board</h1>
-		
 		<script>
 			location.href='login.jsp';
 		</script>
