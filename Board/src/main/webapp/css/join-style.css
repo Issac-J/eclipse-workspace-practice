@@ -30,11 +30,12 @@ body {
   display: flex;
 }
 
-/* label, input[text], input[password], input[submit] */
+/* label, input[text], input[password], input[submit], input[email] */
 .join label,
 .join input[type="text"],
 .join input[type="password"],
-.join input[type="submit"] {
+.join input[type="submit"],
+.join input[type="email"] {
   border-radius: 0.25rem;
   padding: 1rem;
 }
@@ -53,9 +54,10 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #3b4148 inset;
 }
 
-/* input[text], input[password] */
+/* input[text], input[password], input[email] */
 .join input[type="text"],
-.join input[type="password"] {
+.join input[type="password"],
+.join input[type="email"] {
   background-color: #3b4148;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
