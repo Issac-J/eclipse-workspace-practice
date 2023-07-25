@@ -13,19 +13,20 @@
       <h1 class="content__title">Sign Up</h1>
 
       <form class="form join" action="joinAction.jsp" method="POST">
-        <div class="form__field">
-          <label for="join__username">
+      
+      	<div class="form__field">
+          <label for="join__userid">
             <img class="icons" alt="" src="./images/icons8-user-48.png" />
           </label>
           <input
             type="text"
-            id="join__username"
+            id="join__userid"
             class="form__input"
             name="userId"
-            placeholder="Username"
+            placeholder="ID"
           />
-        </div>
-
+        </div> 
+      
         <div class="form__field">
           <label for="join__password">
             <img class="icons" alt="" src="./images/icons8-password-48.png" />
@@ -37,6 +38,44 @@
             name="userPw"
             placeholder="Password"
           />
+        </div>
+        
+        <div class="form__field">
+          <label for="join__username">
+            <img class="icons" alt="" src="./images/icons8-user-48.png" />
+          </label>
+          <input
+            type="text"
+            id="join__username"
+            class="form__input"
+            name="userName"
+            placeholder="userName"
+          />
+        </div>
+        
+        <div class="form__field">
+          <label for="join__useremail">
+            <img class="icons" alt="" src="./images/icons8-email-48.png" />
+          </label>
+          <input
+            type="email"
+            id="join__useremail"
+            class="form__input"
+            name="userEmail"
+            placeholder="Email"
+          />
+        </div>
+        
+        <div class="form__field">
+          <label for="join__usergender">
+            <img class="icons" alt="" src="./images/icons8-male-50.png" />
+            <input type="checkbox" id="join__usergender" class="form__input" name="usermale" />
+          </label>
+          
+          <label for="join__usergender">
+            <img class="icons" alt="" src="./images/icons8-female-50.png" />
+            <input type="checkbox" id="join__usergender" class="form__input" name="userfemale" />
+          </label>
         </div>
 
         <div class="form__field">
