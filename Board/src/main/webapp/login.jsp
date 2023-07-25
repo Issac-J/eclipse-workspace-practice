@@ -14,15 +14,15 @@
 
       <form class="form login" action="loginAction.jsp" method="POST">
         <div class="form__field">
-          <label for="login__username">
+          <label for="login__userid">
             <img class="icons" alt="" src="./images/icons8-user-48.png" />
           </label>
           <input
             type="text"
-            id="login__username"
+            id="login__userid"
             class="form__input"
             name="userId"
-            placeholder="Username"
+            placeholder="userid"
           />
         </div>
 
