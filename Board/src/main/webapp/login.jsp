@@ -42,6 +42,10 @@
         <div class="form__field">
           <input type="submit" value="Sign In" />
         </div>
+        
+        <div class="form__field">
+          <a class="signup" href="./join.jsp">Sign Up</a>
+        </div>
       </form>
     </div>
   </body>
