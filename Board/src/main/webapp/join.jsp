@@ -69,12 +69,12 @@
         <div class="form__field">
           <label for="join__usergender">
             <img class="icons" alt="" src="./images/icons8-male-50.png" />
-            <input type="checkbox" id="join__usergender" class="form__input" name="usermale" />
+            <input type="radio" id="join__usergender" class="form__input" name="userGender" value="male" checked/>
           </label>
           
           <label for="join__usergender">
             <img class="icons" alt="" src="./images/icons8-female-50.png" />
-            <input type="checkbox" id="join__usergender" class="form__input" name="userfemale" />
+            <input type="radio" id="join__usergender" class="form__input" name="userGender" value="female" />
           </label>
         </div>
 
