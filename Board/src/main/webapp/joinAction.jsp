@@ -41,7 +41,22 @@
     	out.println("이름: " + name);
     	out.println("이메일: " + email);
     	out.println("성별: " + gender);
-    */   
+    */  
+    	
+	    String userId = null;
+	    
+    // Login 이 되어 있는 사용자는 회원가입 페이지에 접근할 수 없도록 한다.
+	  	if(session.getAttribute("userId") != null) {
+	  		userId = (String) session.getAttribute("userId");
+	  	}
+	  	
+	  	if(userId != null) {
+	  		PrintWriter script = response.getWriter();
+	  		script.println("<script>");
+	  		script.println("alert('이미 로그인이 되어 있습니다.')");
+	  		script.println("location.href = 'main.jsp'");
+	  		script.println("</script>");
+	  	}
    
     	if(user.getUserId() == null || user.getUserPw() == null || user.getUserName() == null || user.getUserEmail() == null || user.getUserGender() == null) {
     		
@@ -66,6 +81,8 @@
     		
     		
     		else {
+    			session.setAttribute("userId", user.getUserId());
+    			
     			PrintWriter script = response.getWriter();
     			script.println("<script>");
     			script.println("location.href = 'login.jsp'");
