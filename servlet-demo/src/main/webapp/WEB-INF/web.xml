@@ -22,4 +22,15 @@
 		<servlet-name>servlet-Demo</servlet-name>
 		<url-pattern>/helloworld</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>lifecycle</servlet-name>
+		<servlet-class>com.demo.servlet.LifecycleTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>lifecycle</servlet-name>
+		<url-pattern>/lifecycleTest</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
