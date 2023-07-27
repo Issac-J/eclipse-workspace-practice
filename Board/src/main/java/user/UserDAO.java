@@ -55,6 +55,28 @@ public class UserDAO {
 		
 		return -2;
 	}
+	
+	public int join(User user) {
+		
+		String SQL = "Insert into user values(?, ?, ?, ?, ?)";
+		
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, user.getUserId());
+			pstmt.setString(2, user.getUserPw());
+			pstmt.setString(3, user.getUserName());
+			pstmt.setString(4, user.getUserEmail());
+			pstmt.setString(5, user.getUserGender());
+			
+			// insert 문을 사용하고 나면 0이상의 값이 반환된다. 그렇기 때문에 바로 return 가능
+			return pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return -1;
+	}
 }
 
 /*
