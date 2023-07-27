@@ -28,10 +28,27 @@
     <h1>Welcome Login!</h1>
     
     <%
+    	String userId = null;
+    
+    	if(session.getAttribute("userId") != null) {
+    		userId = (String) session.getAttribute("userId");
+    	}
+    	
+    	if(userId != null) {
+    		PrintWriter script = response.getWriter();
+    		script.println("<script>");
+    		script.println("alert('이미 로그인이 되어 있습니다.')");
+    		script.println("location.href = 'main.jsp'");
+    		script.println("</script>");
+    	}
+    
     	UserDAO userDAO = new UserDAO();
     	int result = userDAO.login(user.getUserId(), user.getUserPw());
     	
     	if(result == 1) {
+    		// Give Session to User
+    		session.setAttribute("userId", user.getUserId());
+    		
     		PrintWriter script = response.getWriter();
     		script.println("<script>");
     		script.println("location.href = 'main.jsp'");
